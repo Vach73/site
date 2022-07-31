@@ -1,0 +1,72 @@
+@media (max-width: 1230px) {
+  .header-list {
+    display: none;
+  }
+
+  .header-button {
+    display: block;
+    position: fixed;
+    z-index: 9;
+    top: 46px;
+    right: 30px;
+  }
+
+  .header.open .header-list {
+    position: fixed;
+    display: flex;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: white;
+    z-index: 1;
+    flex-direction: column;
+    row-gap: 40px;
+    padding: 46px 30px;
+    font-size: 34px;
+    font-weight: 600;
+  }
+
+  .header-link {
+    color: #606060;
+  }
+
+  .header-link.active {
+    color: black;
+  }
+
+  .header-row {
+    flex-direction: column;
+  }
+
+  .people-text {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .logo-text {
+    margin-top: 0;
+  }
+
+  .people {
+    text-align: center;
+  }
+}
+
+@media (max-width: 700px) {
+  .name {
+    font-size: 34px !important;
+  }
+
+  .name span {
+    font-size: 28px !important;
+  }
+
+  .project-img {
+    margin-bottom: 30px;
+  }
+
+  .portfolio + .portfolio {
+    margin-top: 55px;
+  }
+}
